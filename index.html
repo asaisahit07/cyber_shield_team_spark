@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Shield — Threat Neutralizer & Safety Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#dashboard" aria-label="Cyber Shield dashboard">
+          <span class="brand-mark">◈</span>
+          <span>Cyber Shield</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a data-route="dashboard" href="#dashboard"><i>dashboard</i>Dashboard</a>
+          <a data-route="scan" href="#scan"><i>radar</i>Security Scanner</a>
+          <a data-route="history" href="#history"><i>history</i>Threat History</a>
+          <a data-route="report" href="#report"><i>report</i>Report Threat</a>
+          <a data-route="awareness" href="#awareness"><i>school</i>Awareness Hub</a>
+          <a data-route="quiz" href="#quiz"><i>quiz</i>Security Challenge</a>
+        </nav>
+        <div class="sidebar-status">
+          <span class="pulse"></span>
+          <span><b>Deterministic AI Engine</b><small>Protection Online</small></span>
+        </div>
+      </aside>
+      <div class="content-shell">
+        <header class="topbar">
+          <button class="menu-button" id="menu-button" aria-label="Open navigation"><i>menu</i></button>
+          <span class="connection"><span class="pulse"></span>ZERO-TRACE PRIVACY ACTIVE</span>
+          <div class="topbar-tools">
+            <a href="tel:1930" class="button small danger-button" style="text-decoration:none;font-weight:bold;">
+              <i>call</i> 1930 HELPLINE
+            </a>
+            <div class="avatar">SA</div>
+          </div>
+        </header>
+        <main id="app" tabindex="-1"></main>
+      </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
