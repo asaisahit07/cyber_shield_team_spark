@@ -1,6 +1,6 @@
 const $ = (s, el = document) => el.querySelector(s);
 const app = $('#app');
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = 'https://cyber-shield-team-spark-1.onrender.com/api';
 
 const state = JSON.parse(localStorage.getItem('cyber-shield-state') || 'null') || {
   currentAnalysis: null,
